@@ -1,0 +1,25 @@
+{
+  "name": "hardhat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat ignition deploy ./ignition/modules/MedicalSupplyChain.js --network hardhat",
+    "deploy:test": "hardhat ignition deploy ./ignition/modules/MedicalSupplyChainTest.js --network hardhat",
+    "deploy:sepolia": "hardhat ignition deploy ./ignition/modules/MedicalSupplyChain.js --network sepolia",
+    "node": "hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.0",
+    "hardhat": "^2.25.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0"
+  }
+}
